@@ -415,7 +415,7 @@ footer p {
 }
 
 .form .thumbnail {
-    background: #e67e22;
+    background: rgba(230, 126, 34, 0.47);
     width: 150px;
     height: 150px;
     margin: 0 auto 30px;
