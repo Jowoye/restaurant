@@ -195,7 +195,7 @@ input[type=submit]:active {
 
 }
 
-header {
+#HeaderIndex {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Chuleta.jpg);
     background-size: cover;
     background-position: center;
@@ -209,7 +209,7 @@ header {
     float: left;
     margin-top: 20px;
     margin-left: 10px;
-    border-radius: 100px;
+   
 }
 
 .main-nav {
@@ -520,7 +520,7 @@ footer p {
     color: #e67e22;
 }
 
-body {
+#LoginBody {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/Burger.jpg);
     background-size: cover;
     background-position: center;
@@ -530,7 +530,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-body:before {
+#LoginBody:before {
     content: "";
     position: fixed;
     top: 0;

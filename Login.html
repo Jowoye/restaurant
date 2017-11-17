@@ -14,7 +14,9 @@
 
 </head>
 
-<body>
+    
+<body id="LoginBody">
+    
     <div class="container">
         <div class="info">
             <br>
@@ -23,19 +25,24 @@
     </div>
     <div class="form">
         <div class="thumbnail"><img src="Resources/img/logoLog.png" /></div>
-        <form class="register-form">
-            <input type="text" placeholder="Nombre"  />
+       
+        <form class="register-form" id="registrarse">
+            <input type="text" placeholder="Nombre" />
             <input type="password" placeholder="Contraseña" />
             <input type="text" placeholder="Correo electronico" />
-            <input type="button" name="create" value="create"/>
+            <button>Crear Usuario</button>
+            
             <p class="message">Ya estas registrado? <a href="#">Iniciar Sesioón</a></p>
         </form>
+        
         <form class="login-form">
-            <input type="email" placeholder="Correo Electronico" id="user" required="true"/>
-            <input type="password" placeholder="Contraseña" id="pass" required="true"/>
-            <button id="login" onclick="validate()">Login</button>
-            <p class="message">No estas registrado aun? <a href=signup.html>Registrarme</a></p>
+            <input type="text" placeholder="Correo Electronico" />
+            <input type="password" placeholder="Contraseña" />
+            <button>Ingresar</button>
+            
+            <p class="message">No estas registrado aun? <a href="#">Registrarme</a></p>
         </form>
+    
     </div>
     <br>
 
