@@ -1,11 +1,15 @@
 /* Big tablet to 1200px (widths smaller taht the 1140px row) */
 @media only screen and (max-width: 1200px) {
-    .hero-text-box {
+    .headerDiv {
         width: 100%;
         padding: 0 2%;
     }
     
     .row { padding: 0 2%; }
+
+    .meals-photo {
+        height: 200px;
+    }
 }
 
 
@@ -18,14 +22,7 @@
         width: 80%;
         margin-left: 10%;
     }
-    
-    .steps-box { margin-top: 10px; }
-    .steps-box:last-child { margin-top: 10px; }
-    .works-steps { margin-bottom: 40px; }
-    .works-step:last-of-type { margin-bottom: 60px; }
-    
-    .app-screen { width: 50%; }
-    
+      
     .icon-small { 
         width: 17px;
         margin-right: 5px;
@@ -33,15 +30,11 @@
     
     .city-feature { font-size: 90%; }
     
-    .plan-box {
-        width: 100%;
-        margin-left: 0%;
+    .meals-photo {
+        height: 100px;
     }
-    
-    .plan-price { font-size: 250%; }
-    .contact-form { width: 80%; }
-}
 
+}
 
 
 /* Small phones to small tablets: from 481px to 767px */
@@ -50,20 +43,21 @@
     section { padding: 30px 0; }
     
     .row,
-    .hero-text-box { padding: 0 4%; }
+    .headerDiv { padding: 0 4%; }
     .col { 
         width: 100%;
         margin: 0 0 4% 0;
     }
     
+    .main-nav {display: none;}
     
-    .main-nav { display: none; }
-    .mobile-nav-icon {display: inline-block;}
+    .navIcon {display: inline-block;}
     
+
     .main-nav {
         float: left;
-        margin-top: 30px;
-        margin-left: 25px;
+        margin-top: 10px;
+        margin-left: 15px;
     }
     
     .main-nav li {
@@ -74,16 +68,23 @@
     .main-nav li a:visited {
         display: block;
         border: 0;
-        padding: 10px 0;
+        padding: 5px 0;
         font-size: 100%;
     }
-    
-    .sticky .main-nav { margin-top: 10px; }
 
-    .sticky .main-nav li a:link,
-    .sticky .main-nav li a:visited { padding: 10px 0; }
-    .sticky .mobile-nav-icon { margin-top: 10px; }
-    .sticky .mobile-nav-icon i { color: #555; }
+    .logo{
+        height: 60px;
+        width: auto;
+        float: left;
+        margin: 10px 0px  0px 10px ;
+    }
+    
+    .static .main-nav { margin-top: 10px; }
+
+    .static .main-nav li a:link,
+    .static .main-nav li a:visited { padding: 5px 0; }
+    .static .navIcon { margin-top: 10px; }
+    .static .navIcon i { color: #555; }
     
     
     
@@ -95,27 +96,17 @@
         margin-left: 0%;
     }
     
-    .app-screen { width: 40%; }
-    .steps-box:first-child { text-align: center; }
-    
-    .works-step div {
-        height: 40px;
-        width: 40px;
-        margin-right: 15px;
-        padding: 4px;
-        font-size: 120%;
+    .meals-photo {
+        height: 70px;
     }
-    
-    .works-step { margin-bottom: 20px; }
-    .works-step:last-of-type { margin-bottom: 20px; }
-    
+   
 }
-
-
 
 /* Small phones: from 0 to 480px */
 @media only screen and (max-width: 480px) {
     section { padding: 25px 0; }
-    .contact-form {width: 100%; }
+    .meals-photo {
+        height: 50px;
+    }
 }
 
