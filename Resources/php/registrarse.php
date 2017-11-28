@@ -7,7 +7,7 @@
     $correo = $_POST['correo'];
 	
 	
-	$query = "INSERT INTO registro(nombre,contrasenna,correo) VALUES ('$nombre', $pass ,'$correo')";
+	$query = "INSERT INTO `registro`(`nombre`, `contrasenna`, `correo`) VALUES('$nombre', '$pass' ,'$correo')";
 	
 	mysqli_query($dbc, $query)
 	or die ('Error ejecutando query en la BD');

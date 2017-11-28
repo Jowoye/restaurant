@@ -6,7 +6,7 @@
 	$pass = $_POST['pass'];
 	
 	
-	$query = "SELECT * FROM `registro` WHERE correo = '$email' and contrasenna= $pass";
+	$query = "SELECT * FROM `registro` WHERE correo = '$email' and contrasenna= '$pass'";
 	
 	mysqli_query($dbc, $query)
 	or die ('Error ejecutando query en la BD');
