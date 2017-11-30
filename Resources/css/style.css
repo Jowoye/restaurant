@@ -35,7 +35,7 @@ html {
 }
 
 section {
-    padding: 90px 0;
+    padding: 100px 0;
 
 }
 
@@ -334,6 +334,21 @@ input[type=submit]:active {
     transform: scale(1.03);
     opacity: 1;
 }
+
+/*****  order-form *******/
+
+.order-form{
+    width: 60%;
+    margin: 0 auto;
+   
+}
+select{
+    width: 70%;
+    padding: 7px;
+    border-radius: 3px;
+    border:1px solid #cf6d17;
+}
+
 
 /*** cities*/
 
