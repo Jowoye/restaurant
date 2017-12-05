@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Chef - Checkout</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="Resources/css/style.css">
+    <meta name="robots" content="noindex,follow" />
+</head>
+
+<body class="payments">
+
+    <div class="checkout-panel">
+        <div class="panel-body">
+            <h2 class="title">Metodo de Pago</h2>
+
+            <div class="progress-bar">
+                <div class="step active"></div>
+                <div class="step active"></div>
+                <div class="step"></div>
+                <div class="step"></div>
+            </div>
+
+            <div class="payment-method">
+                <label for="card" class="method card">
+          <div class="card-logos">
+            <img src="Resources/img/visa_logo.png"/>
+            <img src="Resources/img/mastercard_logo.png"/>
+          </div>
+
+          <div class="radio-input">
+            <input id="card" type="radio" name="payment">
+            Pagar con tarjeta de credito.
+          </div>
+        </label>
+
+                <label for="paypal" class="method paypal">
+          <img src="Resources/img/paypal_logo.png"/>
+          <div class="radio-input">
+            <input id="paypal" type="radio" name="payment">
+            Pagar con Paypal.
+          </div>
+        </label>
+            </div>
+
+            <div class="input-fields">
+                <div class="column-1">
+                    <label for="cardholder">Nombre</label>
+                    <input type="text" id="cardholder" />
+
+                    <div class="small-inputs">
+                        <div>
+                            <label for="date">Fecha de Caducidad</label>
+                            <input type="text" id="date" placeholder="MM / AA" />
+                        </div>
+
+                        <div>
+                            <label for="verification">CVV / CVC *</label>
+                            <input type="password" id="verification" />
+                        </div>
+                    </div>
+
+                </div>
+                <div class="column-2">
+                    <label for="cardnumber">Numero de la Tarjeta</label>
+                    <input type="password" id="cardnumber" />
+
+                    <span class="info">* CVC o CVV es un código impreso en su tarjeta de débito o crédito. Corresponde a los tres últimos dígitos del número impreso en el reverso de la tarjeta.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel-footer">
+            <button class="butn back-btn">Atras</button>
+            <button class="butn next-btn">Siguiente</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
