@@ -1,0 +1,118 @@
+<!doctype html>
+
+<html lang="es">
+
+<head>
+
+    <title>Happy Chef - Gracias!</title>
+
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="Resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="Resources/css/queries.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="Resources/js/Navbar.js"></script>
+
+    <script language="Javascript" type="text/javascript">
+        function OrdNum() {
+            var x = Math.floor(Math.random() * 1526643557);
+            document.getElementById("ordNum").innerHTML = "Orden Numero:  " + x;
+        }
+
+        window.onload = OrdNum;
+
+    </script>
+
+</head>
+
+<body>
+    <header id="HeaderFinal">
+        <nav>
+
+            <div class="row">
+                <img src="Resources/img/logoLog.png" alt="restaurant logo" class="logo">
+                <a href="#HeaderIndex"><img src="Resources/img/logoLog.png" alt="restaurant logo" class="logo-static" ></a>
+                <ul class="main-nav js--main-nav">
+                    <li>
+                        <a href="#menu">Menú</a>
+                    </li>
+                    <li>
+                        <a href="#order">Ordenar</a>
+                    </li>
+                    <li>
+                        <a href=#cities>Sucursales</a>
+                    </li>
+
+
+                </ul>
+                <a class="navIcon js--navIcon">
+                    <i class="ion-navicon-round"></i>
+                </a>
+            </div>
+
+        </nav>
+        <div class="headerThanks">
+            <h1 class="thanks">Gracias por tu compra!</h1><br><br><br>
+            <a class="ordNum" id="ordNum" >Orden numero: </a>
+        </div>
+
+        <div class="FinalDesc">
+            <p>
+                Tu orden esta siendo procesada en este momento. En breve recibiras un email confirmandote el envio de tu orden, una vez que este lista para retirar, recibiras una llamada del restaurante encargado de procesar tu pedido.
+            </p>
+        </div>
+
+    </header>
+
+
+    <footer>
+
+        <div class="row">
+            <div class="col span-1-of-2">
+                <ul class="footer-nav">
+                    <li>
+                        <a href="#aboutUs">Acerca de nosotros</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="col span-1-of-2">
+                <ul class="social-links">
+                    <li>
+                        <a href="https://facebook.com" target="_blank">
+                            <i class="ion-social-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com" target="_blank">
+                            <i class="ion-social-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com" target="_blank">
+                            <i class="ion-social-instagram"></i>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <p>Copyright &copy; 2017 </p>
+        </div>
+
+    </footer>
+
+</body>
+
+
+</html>
