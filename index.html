@@ -4,6 +4,8 @@
 
 <head>
 
+<title>Happy Chef</title>    
+    
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
     <link rel="stylesheet" type="text/css" href="Resources/css/style.css">
@@ -14,7 +16,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="vendors/js/jquery.waypoints.min.js"></script>
     <script src="Resources/js/Navbar.js"></script>
-    <title>Happy Chef</title>
+
 </head>
 
 <body>
@@ -23,13 +25,13 @@
 
             <div class="row">
                 <img src="Resources/img/logoLog.png" alt="restaurant logo" class="logo">
-                <img src="Resources/img/logoLog.png" alt="restaurant logo" class="logo-static">
+                <a href="#HeaderIndex" ><img src="Resources/img/logoLog.png" alt="restaurant logo" class="logo-static" ></a>
                 <ul class="main-nav js--main-nav">
                     <li>
                         <a href="#menu">Menú</a>
                     </li>
                     <li>
-                        <a href=#>Ordenar</a>
+                        <a href="#order">Ordenar</a>
                     </li>
                     <li>
                         <a href=#cities>Sucursales</a>
@@ -42,13 +44,15 @@
                     </li>
 
                 </ul>
-                <a class="navIcon js--navIcon"><i class="ion-navicon-round"></i></a>
+                <a class="navIcon js--navIcon">
+                    <i class="ion-navicon-round"></i>
+                </a>
             </div>
 
         </nav>
         <div class="headerDiv">
             <h1>Bienvenido a Restaurant HC</h1>
-            <a class="btn btnOrder" href="#">Comprar</a>
+            <a class="btn btnOrder js--btnOrder" href="#">Ordenar</a>
             <a class="btn btnSeeMore js--btnSeeMore" href="#">Ver más</a>
         </div>
     </header>
@@ -147,6 +151,63 @@
         </ul>
     </section>
 
+    <section class="section-form js--Order" id="order">
+        <div class="row">
+            <h2>Elija a su gusto</h2>
+        </div>
+        <div class="row">
+            <form method="post" action="" class="order-form">
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="menuDropdown">Seleccione la comida</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <select name="menuDropdown" id="menuDropdown">
+                            <option value="chuleta">Chuleta</option>
+                            <option value="pizza">Pizza</option>
+                            <option value="alita">Alitas de pollo</option>
+                            <option value="sushi">Sushi</option>
+                            <option value="tacos">Tacos</option>
+                            <option value="sandwich">Sandwich</option>
+                            <option value="hamburguesa">Hamburguesa</option>
+                            <option value="bistec">Bistec</option>
+                        </select>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="citiesDropdown">Seleccione localidad</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <select name="citiesDropdown" id="citiesDropdown">
+                            <option value="SanPedro">San Pedro</option>
+                            <option value="Escazu">Escazú</option>
+                            <option value="Curridabat">Curridabat</option>
+
+                        </select>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>&nbsp;</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <!-- <input type="submit" value="Ordenar" > -->
+                        <a class="btn btnOrder " href="checkout.html">Ordenar</a>
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+
+
+    </section>
+
+
     <section class="section-cities" id="cities">
         <div class="row">
             <h2>Estamos ubicados en estas ciudades</h2>
@@ -216,7 +277,8 @@
                     </li>
                     <li>
                         <a href="https://instagram.com" target="_blank">
-                            <i class="ion-social-instagram"></i>                        </a>
+                            <i class="ion-social-instagram"></i>
+                        </a>
                     </li>
 
                 </ul>

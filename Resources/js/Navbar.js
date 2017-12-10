@@ -17,6 +17,13 @@ $(function () {
     $('.js--btnSeeMore').click(function () {
         $('html,body').animate({ scrollTop: $('.js--section-features').offset().top }, 1000);
     });
+    
+    $('.js--btnOrder').click(function () {
+        $('html,body').animate({ scrollTop: $('.js--Order').offset().top }, 1000);
+    });
+
+  
+
     /* Smooth Scrolling  */
     $(function () {
         $('a[href*="#"]:not([href="#"])').click(function () {
