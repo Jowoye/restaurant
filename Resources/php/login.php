@@ -1,5 +1,5 @@
 <?php
-	$dbc = mysqli_connect('localhost','root','','restaurant')
+	$dbc = mysqli_connect('localhost:8080','root','','restaurant')
 	or die('Error conectado a MYSQL');
 	
 	$email = $_POST['email'];
